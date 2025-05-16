@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"><title>Index</title></head>
-<body>
-  <h1>Welcome</h1>
-  <ul>
-    <li><a href="/hello?message=こんにちは">Say Hello</a></li>
-    <li>
-      <form action="/whatsup" method="post">
-        <input name="message" placeholder="What's up?">
-        <button type="submit">Go</button>
-      </form>
-    </li>
-  </ul>
-  <link rel="stylesheet" href="/static/style.css">
-</body>
+  <head>
+    <title>Simple Framework</title>
+  </head>
+  <body>
+    <h1>Welcome!</h1>
+    <p>Try these actions:</p>
+    <ul>
+      <li><a href="/hello?message=Hello">Greeeting</a></li>
+    </ul>
+    <form action="/whatsup" method="post">
+      <label for="info">name:</label><br>
+      <input type="text" id="info" name="info"><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
 </html>
